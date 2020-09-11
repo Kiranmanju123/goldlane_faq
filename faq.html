@@ -16,6 +16,16 @@
 </head>
 <style>
 
+[data-filter-item] {
+  padding: 15px;
+  background-color: #ccc;
+  border: 1px solid #fff;
+}
+
+.hidden {
+  display: none;
+}
+
 .faq__main__heading {
   color: #3B325F;
   font-family: Poppins;
@@ -30,9 +40,10 @@
 
 }
 
-.faq__answer {
+span {
   color: #6E668A;
   font-family: Poppins;
+  font-weight: 500;
 
 }
 
@@ -148,9 +159,9 @@ background-position: right -1100px top -1070px;
 <div class="container">
   <div class="row">
     <div class="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7">
-    <h4 id="support" style="color: #3B325F; font-weight: 600; font-size: 28px; font-family: Poppins;" class="mt-5 pl-5"><span style="font-weight: 100;">Goldlane</span> <span style="font-weight: 800;">Digital Gold faq</span></h4>
+    <h4 id="support" style="color: #3B325F; font-weight: 600; font-size: 28px; font-family: Poppins;" class="mt-5 pl-5"><span style="font-weight: 100; color: #3B325F;">Goldlane</span> <span style="font-weight: 800; color: #3B325F;">Digital Gold faq</span></h4>
       <div class="input-group mt-5 search pl-5" style="max-width: 75%;">
-      <input id="accordion_search_bar" class="form-control form-control-lg" type="text" placeholder="Search"  style="border-right: 0px; box-shadow: none;">
+      <input id="filter" class="form-control form-control-lg text-input" type="text" placeholder="Search"  style="border-right: 0px; box-shadow: none;">
       <div class="input-group-append">
         <span class="input-group-text" id="basic-addon2" style="background-color: white;"><img src="img/Icon feather-search.png"></span>
       </div>
@@ -162,128 +173,99 @@ background-position: right -1100px top -1070px;
            <p>Account</p>
         </div>
        
-           <div class="faq__ques__answer">
-              <div class="faq__question mt-4">
-                <p>1. Is it possible to change my registered mobile number?</p>
+           <div id="search" class="faq__ques__answer">
+              <div  class="faq__question mt-4">
+                <p>1. Is it possible to change my registered mobile number? <br> <span><br>Unfortunately, it is not possible to change your registered mobile number.</span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>Unfortunately, it is not possible to change your registered mobile number.</p>
-              </div>
+              
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>2. In case I lose my registered mobile number, how do I reset my password?</p>
+                <p>2. In case I lose my registered mobile number, how do I reset my password? <br> <span><br>Please contact our support team if you lose/forget your mobile number.</span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>Please contact our support team if you lose/forget your mobile number.</p>
-              </div>
+            
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>3. Why should I get my KYC done with Goldlane?</p>
+                <p>3. Why should I get my KYC done with Goldlane? <br> <span><br>Our top priority is the safety and security of your investment. KYC verification helps us to validate your authenticity and aids in adding a nominee for your account. This also helps us to prevent potentially fraudulent activities.<br>KYC is mandatory to carry out <br><br>
+
+                  1.Buy order above 10,000 collectively.<br>
+                  2.Sell orders above ₹ 10,000 collectively.<br>
+                  3.Getting home delivered of your Gold/Silver.<br>
+                   4.Exchange orders.<br>
+                   5.Instant to 24 Hours settlement.</span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>Our top priority is the safety and security of your investment. KYC verification helps us to validate your authenticity and aids in adding a nominee for your account. This also helps us to prevent potentially fraudulent activities.<br>KYC is mandatory to carry out <br> <div style="line-height: 0.5"> 
-                  <ul><li>Buy order above 10,000 collectively.</li></ul>
-                   <ul><li>Sell orders above ₹ 10,000 collectively.</li></ul>
-                   <ul><li>Getting home delivered of your Gold/Silver.</li></ul>
-                   <ul><li>Exchange orders.</li></ul>
-                   <ul><li>Instant to 24 Hours settlement.</li></ul>
-
-                </div></p>
-              </div>
+             
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>4. How do I complete my KYC process?</p>
+                <p>4. How do I complete my KYC process? <br> <span> <br> Simply open the GoldLane app on your phone, go to settings and click on the KYC verification tab under the Profile section to complete the process</span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>Simply open the GoldLane app on your phone, go to settings and click on the KYC verification tab under the Profile section to complete the process</p>
-              </div>
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>5. What KYC documents are accepted?</p>
+                <p>5. What KYC documents are accepted? <br> <span><br>In order to complete your KYC verification process, you may submit any one of the following Government validated identification cards:<br><br>
+                  1. Voter Card <br>
+                  2. Aadhar Card<br>
+                  3. Driving License <br>
+                 4. PAN Card <br>
+                 </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>In order to complete your KYC verification process, you may submit any one of the following Government validated identification cards:<br> <div style="line-height: 0.5"> 
-                  <ul><li>Voter Card</li></ul>
-                   <ul><li>Aadhar Card</li></ul>
-                   <ul><li>Driving License</li></ul>
-                   <ul><li> PAN Card</li></ul>
-                  
-
-                </div></p>
-              </div>
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>6. What happens to my accumulated Gold/Silver in case of any mishap?</p>
+                <p>6. What happens to my accumulated Gold/Silver in case of any mishap? <br> <span> <br> In the event of any casualty or death, the nominee is entitled to all investments secured in the vault.</span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>In the event of any casualty or death, the nominee is entitled to all investments secured in the vault.</p>
-              </div>
+             
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>7. How do I add a Nominee for my account?</p>
+                <p>7. How do I add a Nominee for my account? <br> <span> <br> After completing KYC verification, open the settings tab on your GoldLane app and click on “Add Nominee” and fill out the requisite details. In case your KYC verification hasn’t been completed, please visit your Profile and complete the verification to add a nominee.</span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>After completing KYC verification, open the settings tab on your GoldLane app and click on “Add Nominee” and fill out the requisite details. In case your KYC verification hasn’t been completed, please visit your Profile and complete the verification to add a nominee.</p>
-              </div>
             </div>
 
-             <div class="faq__ques__answer">
+             <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>8. Is it possible to change the Nominee?</p>
+                <p>8. Is it possible to change the Nominee? <br> <span> <br> Yes, we offer you the option to change your nominee. Please contact our support team for further details </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>Yes, we offer you the option to change your nominee. Please contact our support team for further details</p>
-              </div>
+              
             </div>
 
-             <div class="faq__ques__answer">
+             <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>9. How and when does a nominee play the role?</p>
+                <p>9. How and when does a nominee play the role? <br> <span> <br> GoldLane monitors your login activity. In case your account is completely inactive for more than 365 days, we will notify you. And if there’s no response from your behalf for 21 days, we will contact your nominee and further process will be carried out. </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>GoldLane monitors your login activity. In case your account is completely inactive for more than 365 days, we will notify you. And if there’s no response from your behalf for 21 days, we will contact your nominee and further process will be carried out.</p>
-              </div>
+              
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>10. How can I reset my password?</p>
+                <p>10. How can I reset my password? <br> <span> <br> In case you wish to reset your password, enter your registered mobile number and click on the “Forgot Password” tab. An OTP will be sent to you via SMS. Simply enter the OTP and click on proceed.</span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>In case you wish to reset your password, enter your registered mobile number and click on the “Forgot Password” tab. An OTP will be sent to you via SMS. Simply enter the OTP and click on proceed.</p>
-              </div>
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>11. Is a PAN Card mandatory?</p>
+                <p>11. Is a PAN Card mandatory? <br> <span> <br> PAN Card details are required only when a transaction value crosses Rs. 2 Lakh. </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>PAN Card details are required only when a transaction value crosses Rs. 2 Lakh.</p>
-              </div>
+             
             </div>
 
 
@@ -292,153 +274,125 @@ background-position: right -1100px top -1070px;
 
 
         <div class="faq__body pl-5 mt-5">
+
         <div class="faq__main__heading">
            <p>Buying</p>
         </div>
+
        
-           <div class="faq__ques__answer">
+           <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>1. What can I do with my accumulated digital Gold?</p>
+                <p>1. What can I do with my accumulated digital Gold? <br> <span> <br> At GoldLane, we offer you the flexibility to sell, exchange or get your gold delivered to your doorstep. </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>At GoldLane, we offer you the flexibility to sell, exchange or get your gold delivered to your doorstep.</p>
-              </div>
+              
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>2. How to buy digital gold on GoldLane?</p>
+                <p>2. How to buy digital gold on GoldLane? <br> <span> <br> On the GoldLane app, <br><br>
+                  1. Open buy option <br>
+                  2. Choose the commodity you want to buy. <br>
+                   3. Enter value in Rupee or Weight <br>
+                  4. Proceed to payment. <br>
+                 </span></p>
               </div>
 
-              <div class="faq__answer">
-                  <p>On the GoldLane app,<br> <div style="line-height: 0.5"> 
-                  <ul><li>Open buy option</li></ul>
-                   <ul><li>Choose the commodity you want to buy.</li></ul>
-                   <ul><li>Enter value in Rupee or Weight</li></ul>
-                   <ul><li>Proceed to payment.</li></ul>
-                </div></p>
-              </div>
+              
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>3. What is the minimum amount required to buy digital gold/silver?</p>
+                <p>3. What is the minimum amount required to buy digital gold/silver? <br><br> <span> We offer digital gold/silver purchase options from prices starting as low as ₹1. <br> </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>We offer digital gold/silver purchase options from prices starting as low as ₹1.</p>
-              </div>
+              
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>4. What is the purity of gold/silver I buy from GoldLane?</p>
+                <p>4. What is the purity of gold/silver I buy from GoldLane? <br> <span> <br> Our offerings include 24 Karat (999) and 22 Karat (916) Gold and Silver (999).</span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>Our offerings include 24 Karat (999) and 22 Karat (916) Gold and Silver (999).</p>
-              </div>
+           
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>5.What is the assurance for purity and safety of the gold/silver I purchase?</p>
+                <p>5.What is the assurance for purity and safety of the gold/silver I purchase? <br> <span> <br>All our offerings are BIS Hallmark/Independent Assayer certified. GoldLane offers the best assurance for your gold, in terms of quality as well as security.<br>
+                 Industry Standard Vaults, coupled with insurance coverage, ensures that your gold and investments are in the safest hands.</span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>All our offerings are BIS Hallmark/Independent Assayer certified. GoldLane offers the best assurance for your gold, in terms of quality as well as security.<br>
-                 Industry Standard Vaults, coupled with insurance coverage, ensures that your gold and investments are in the safest hands.</p>
-              </div>
+              
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>6. How to check my vault balance?</p>
+                <p>6. How to check my vault balance? <br> <span> <br> On the GoldLane app, choose vault option and you should be able to see your vault balance with nett worth of it. </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>On the GoldLane app, choose vault option and you should be able to see your vault balance with nett worth of it.</p>
-              </div>
+        
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>7. Can I buy gold/silver coins directly?</p>
+                <p>7. Can I buy gold/silver coins directly? <br> <span> <br> Yes, you will be able to make purchases directly from the GoldLane app. Our highest safety standards ensure that all your private information is safe with us. </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>Yes, you will be able to make purchases directly from the GoldLane app. Our highest safety standards ensure that all your private information is safe with us.</p>
-              </div>
+              
             </div>
 
-             <div class="faq__ques__answer">
+             <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>8. Where can I obtain an invoice for my purchases?</p>
+                <p>8. Where can I obtain an invoice for my purchases? <br> <span> <br> After a purchase is made, an Invoice will be sent directly to your registered email id.<br>
+               You can also find a copy of the Invoice in your order summary. </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>After a purchase is made, an Invoice will be sent directly to your registered email id.<br>
-               You can also find a copy of the Invoice in your order summary.</p>
-              </div>
+              
             </div>
 
-             <div class="faq__ques__answer">
+             <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>9. How and when does a nominee play the role?</p>
+                <p>9. How and when does a nominee play the role? <br> <span> <br> GoldLane monitors your login activity. In case your account is completely inactive for more than 365 days, we will notify you. And if there’s no response from your behalf for 21 days, we will contact your nominee and further process will be carried out. </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>GoldLane monitors your login activity. In case your account is completely inactive for more than 365 days, we will notify you. And if there’s no response from your behalf for 21 days, we will contact your nominee and further process will be carried out.</p>
-              </div>
+              
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>10. Can I cancel the Buy order?</p>
+                <p>10. Can I cancel the Buy order? <br> <span> <br> Unfortunately, once an order is placed, you will not be able to cancel it.</span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>Unfortunately, once an order is placed, you will not be able to cancel it.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>11. How often are the prices changed/updated for a transaction?</p>
+                <p>11. How often are the prices changed/updated for a transaction? <br> <span> Gold/Silver prices are linked to International markets and often fluctuate. Once a transaction is initiated, you have to complete the purchase within five minutes, following which the prices are updated again.</span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>Gold/Silver prices are linked to International markets and often fluctuate. Once a transaction is initiated, you have to complete the purchase within five minutes, following which the prices are updated again.
-
-                </p>
-              </div>
+              
             </div>
 
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>12. How do you determine the price?</p>
+                <p>12. How do you determine the price? <br> <span> <br> At GoldLane, the rates on our gold/silver offerings are based on International Pricing Standards. Local taxes/GST is included before we determine the final price. </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>At GoldLane, the rates on our gold/silver offerings are based on International Pricing Standards. Local taxes/GST is included before we determine the final price.
-
-                </p>
-              </div>
+             
             </div>
 
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>13. My Buy order was successful, but it hasn’t reflected in my Digital Vault</p>
+                <p>13. My Buy order was successful, but it hasn’t reflected in my Digital Vault <br> <span> <br> We usually take 5-30 minutes  to process your order. Don’t be alarmed if the transaction doesn’t reflect in the vault immediately. In case the status does not change after 30 minutes, please contact our support team and we’ll help you resolve the issue.</span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>We usually take 5-30 minutes  to process your order. Don’t be alarmed if the transaction doesn’t reflect in the vault immediately. In case the status does not change after 30 minutes, please contact our support team and we’ll help you resolve the issue.
-
-                </p>
-              </div>
+            
             </div>
 
 
@@ -451,79 +405,76 @@ background-position: right -1100px top -1070px;
            <p>Exchanging at partner stores</p>
         </div>
        
-           <div class="faq__ques__answer">
+           <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>1. Where can I exchange my digital gold?</p>
+                <p>1. Where can I exchange my digital gold? <br> <span> <br> You can exchange accumulated Digital Gold/Silver for ornaments at any of GoldLane’s partner stores. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>You can exchange accumulated Digital Gold/Silver for ornaments at any of GoldLane’s partner stores.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>2. How can I exchange digital gold through GoldLane app?</p>
+                <p>2. How can I exchange digital gold through GoldLane app? <br> <span> <br> On the GoldLane app, go to exchange.<br><br>
+                  1.Choose commodity and Enter weight.<br>
+                  2.Scan the partners QR code or Enter ID followed with iPin proceed.
+                   
+                 </span></p>
               </div>
 
-              <div class="faq__answer">
-                  <p>On the GoldLane app, go to exchange.<br> <div style="line-height: 0.5"> 
+              <!-- <div class="faq__answer">
+                  <p>On the GoldLane app, go to exchange.<br>
                   <ul><li>Choose commodity and Enter weight.</li></ul>
                    <ul><li>Scan the partners QR code or Enter ID followed with iPin proceed.</li></ul>
                    
-                </div></p>
-              </div>
+                </p>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>3. Do I have to pay an extra charge for a gold ornament?</p>
+                <p>3. Do I have to pay an extra charge for a gold ornament? <br> <span> <br> Yes. Making charges are decided by the respective jeweller based on the type of ornament. These charges are to be paid directly by the user. </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>Yes. Making charges are decided by the respective jeweller based on the type of ornament. These charges are to be paid directly by the user.</p>
-              </div>
+              
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>4. Does goldlane guarantee the purity of gold at partner stores?</p>
+                <p>4. Does goldlane guarantee the purity of gold at partner stores? <br> <span> <br> While we have partnered with reputable jewellers, GoldLane verifies BIS Hallmark certificate of Jewellers when partnering with them.
+                 However, its users responsible to check for the purity/BIS Hallmark certification of ornaments purchased from Partner’s stores. </span></p>
               </div>
-
+<!-- 
               <div class="faq__answer">
                  <p>While we have partnered with reputable jewellers, GoldLane verifies BIS Hallmark certificate of Jewellers when partnering with them.
                  However, its users responsible to check for the purity/BIS Hallmark certification of ornaments purchased from Partner’s stores. </p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>5. I transferred gold from my account but the Partner store did not receive that yet. What should I do?</p>
+                <p>5. I transferred gold from my account but the Partner store did not receive that yet. What should I do? <br> <span> <br> While this is a rarity, such incidents may occur due to technical glitches. Please contact our support team and we will help you to resolve the issue. </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>While this is a rarity, such incidents may occur due to technical glitches. Please contact our support team and we will help you to resolve the issue. </p>
-              </div>
+             
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>6. Does GoldLane offer an exchange rate?</p>
+                <p>6. Does GoldLane offer an exchange rate? <br> <span> <br> We do not offer any exchange rates. However, in case the difference is greater than GoldLane’s selling price, please file a report with our support team. </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>We do not offer any exchange rates. However, in case the difference is greater than GoldLane’s selling price, please file a report with our support team.</p>
-              </div>
+              
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>7. Can I reverse the exchange order?</p>
+                <p>7. Can I reverse the exchange order? <br> <span> <br> Unfortunately, once an order is placed, you will not be able to reverse it. </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>Unfortunately, once an order is placed, you will not be able to reverse it.</p>
-              </div>
+              
             </div>
 
             
@@ -533,167 +484,147 @@ background-position: right -1100px top -1070px;
 
 
          <div class="faq__body pl-5 mt-5">
+
         <div class="faq__main__heading">
            <p>Getting Delivered</p>
         </div>
        
-           <div class="faq__ques__answer">
+           <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>1. How to request for delivery on the GoldLane app?</p>
+                <p>1. How to request for delivery on the GoldLane app? <br> <span> <br> On the GoldLane app, open Delivery.<br> 
+                1.Choose among the coin designs and the denomination weight you need.<br>
+                2.Proceed with the payment. </span></p>
               </div>
 
-              <div class="faq__answer">
-                  <p>On the GoldLane app, open Delivery.<br> <div style="line-height: 1.5"> 
-                  <ul><li>Choose among the coin designs and the denomination weight you need.</li></ul>
-                   <ul style="line-height: 0.5"><li>Proceed with the payment.</li></ul>
-                   
-                </div></p>
-              </div>
+              
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>2. Can I get delivery of coins/bars higher than the digital gold balance in my vault?</p>
+                <p>2. Can I get delivery of coins/bars higher than the digital gold balance in my vault? <br> <span> <br> Yes, you can. You just have to pay for the cost of the differential amount and we’ll deliver the product to you.By paying an extra amount, the coins will be delivered to you.<br><br>
+
+                  For Example: In case you have 1.2 grams of gold in your vault and you wish to purchase a 2 gram gold coin, you can mark “Use my vault balance” at checkout and pay for the cost of the remaining 0.8 grams </span></p>
               </div>
 
-              <div class="faq__answer">
-                  <p>Yes, you can. You just have to pay for the cost of the differential amount and we’ll deliver the product to you.By paying an extra amount, the coins will be delivered to you.<br><br>
-
-                  For Example: In case you have 1.2 grams of gold in your vault and you wish to purchase a 2 gram gold coin, you can mark “Use my vault balance” at checkout and pay for the cost of the remaining 0.8 grams.</p>
-              </div>
+            
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>3. Can I Collect The Coins From The Delivery Center Directly?</p>
+                <p>3. Can I Collect The Coins From The Delivery Center Directly? <br> <span> <br> No. Currently, we only accept delivery requests made via the GoldLane app. We shall, however, notify you once we allow direct collection of gold/silver from our partner stores </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>No. Currently, we only accept delivery requests made via the GoldLane app. We shall, however, notify you once we allow direct collection of gold/silver from our partner stores</p>
-              </div>
+             
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>4. Is it possible to cancel the Delivery order and get back Gold/Silver in digital form?</p>
+                <p>4. Is it possible to cancel the Delivery order and get back Gold/Silver in digital form? <br> <span> <br> Once an order has been placed, it can neither be cancelled nor be reversed to digital gold/silver.</span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>Once an order has been placed, it can neither be cancelled nor be reversed to digital gold/silver.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>5. Can I change my delivery address after placing an order?</p>
+                <p>5. Can I change my delivery address after placing an order? <br> <span> <br> In case you’ve placed an order, and wish to change the delivery address, kindly contact our customer support team. </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>In case you’ve placed an order, and wish to change the delivery address, kindly contact our customer support team. </p>
-              </div>
+              
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>6. Do I Have To Show Any Documents at the Time Of Delivery?</p>
-              </div>
-
-              <div class="faq__answer">
-                <p>Yes. At the point of delivery, the recipient shall show any of the following Government-approved identification cards to collect the product:<br> <div style="line-height: 0.5"> 
-                  <ul><li>Aadhar Card</li></ul>
-                   <ul><li>Driver’s License</li></ul>
-                   <ul><li>Voters Identification Card Or</li></ul>
-                   <ul><li>Passport</li></ul>
+                <p>6. Do I Have To Show Any Documents at the Time Of Delivery? <br> <span> <br> Yes. At the point of delivery, the recipient shall show any of the following Government-approved identification cards to collect the product:<br>
+                  1. Aadhar Card<br>
+                   2. Driver’s License<br>
+                   3. Voters Identification Card Or<br>
+                  4.  Passport<br>
 
                    
-                </div></p> <br>
-                <p>Only once the credentials of the recipient is confirmed, the company/courier agent will hand over the product. In order to ensure maximum safety, details of the recipient shall be noted and therefore, the recipient of the package is requested to cooperate with the delivery agent by providing a valid copy of their Government-approved personal identification card.</p>
+                 <br> Only once the credentials of the recipient is confirmed, the company/courier agent will hand over the product. In order to ensure maximum safety, details of the recipient shall be noted and therefore, the recipient of the package is requested to cooperate with the delivery agent by providing a valid copy of their Government-approved personal identification card. </span></p>
               </div>
+
+              
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>7 .What To Do If I Miss The Delivery?</p>
+                <p>7 .What To Do If I Miss The Delivery? <br> <span> <br> In case you missed the delivery, Immediately contact our customer support team. </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>In case you missed the delivery, Immediately contact our customer support team.</p>
-              </div>
+              
             </div>
 
-             <div class="faq__ques__answer">
+             <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>8. What Is The Duration Required For Delivery?</p>
+                <p>8. What Is The Duration Required For Delivery? <br> <span> <br> Usually, it takes 5 -14 working days for us to deliver your product. However, please note that the duration may vary depending on the buyers’ location and other factors. </span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>Usually, it takes 5 -14 working days for us to deliver your product. However, please note that the duration may vary depending on the buyers’ location and other factors.</p>
-              </div>
+              
             </div>
 
-             <div class="faq__ques__answer">
+             <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>9. Is It Possible That After Choosing A Specific Product, I Get Intimation Saying The Product Is Out Of Stock? In Such A Case What Do I Do?</p>
+                <p>9. Is It Possible That After Choosing A Specific Product, I Get Intimation Saying The Product Is Out Of Stock? In Such A Case What Do I Do? <br> <span> <br> 
+                 1.The amount paid will be returned to your bank account within 3-7 working days.</li></ul> <br>
+                   2.Once you get a refund, select any other product from the Goldlane platform.</span></p>
               </div>
 
-              <div class="faq__answer">
-                 <p>
-                  <div style="line-height: 1.5"> 
-                  <ul><li>The amount paid will be returned to your bank account within 3-7 working days.</li></ul>
-                   <ul><li>Once you get a refund, select any other product from the Goldlane platform. </li></ul>
-                   
-                   
-                </div></p>
-              </div>
+             
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>10. What Is The Return Policy In Case I Receive A Different Product Or Damaged Goods?</p>
+                <p>10. What Is The Return Policy In Case I Receive A Different Product Or Damaged Goods? <br> <span> <br> We request our customers to check the product/package for any damage or tampering before accepting it. In case you happen to find any damage or receive a tampered package, do not accept it and the package will be returned to us and we will provide a replacement. <br><br>
+
+                 However, GoldLane shall not be held accountable for any loss or damage reported after the package has been accepted. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>We request our customers to check the product/package for any damage or tampering before accepting it. In case you happen to find any damage or receive a tampered package, do not accept it and the package will be returned to us and we will provide a replacement. <br><br>
 
                  However, GoldLane shall not be held accountable for any loss or damage reported after the package has been accepted.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>11. I didn’t get delivery in the given timeline.What should I do next?</p>
+                <p>11. I didn’t get delivery in the given timeline.What should I do next? <br> <span> <br> Please note that delivery dates may vary based on your location and other external factors. In case you feel it is taking longer, kindly contact our support team. </span></p>
               </div>
 
-              <div class="faq__answer">
+             <!--  <div class="faq__answer">
                  <p>Please note that delivery dates may vary based on your location and other external factors. In case you feel it is taking longer, kindly contact our support team.
                 </p>
-              </div>
+              </div> -->
             </div>
 
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>12. How do you determine the price?</p>
+                <p>12. How do you determine the price? <br> <span> <br> At GoldLane, the rates on our gold/silver offerings are based on International Pricing Standards. Local taxes/GST is included before we determine the final price. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>At GoldLane, the rates on our gold/silver offerings are based on International Pricing Standards. Local taxes/GST is included before we determine the final price.
 
                 </p>
-              </div>
+              </div> -->
             </div>
 
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>13. My Buy order was successful, but it hasn’t reflected in my Digital Vault</p>
+                <p>13. My Buy order was successful, but it hasn’t reflected in my Digital Vault <br> <span> <br> We usually take 5-30 minutes  to process your order. Don’t be alarmed if the transaction doesn’t reflect in the vault immediately. In case the status does not change after 30 minutes, please contact our support team and we’ll help you resolve the issue. </span></p>
               </div>
 
-              <div class="faq__answer">
+             <!--  <div class="faq__answer">
                  <p>We usually take 5-30 minutes  to process your order. Don’t be alarmed if the transaction doesn’t reflect in the vault immediately. In case the status does not change after 30 minutes, please contact our support team and we’ll help you resolve the issue.
 
                 </p>
-              </div>
+              </div> -->
             </div>
 
 
@@ -707,54 +638,53 @@ background-position: right -1100px top -1070px;
            <p>Gifting</p>
         </div>
        
-           <div class="faq__ques__answer">
+           <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>1. How to request for delivery on the GoldLane app?</p>
+                <p>1. How to request for delivery on the GoldLane app? <br> <span> <br> On the GoldLane app<br> <br> 
+                1. Select Gift option<br>
+                2. Choose the commodity<br>
+                3. Enter the mobile number of the user you want to Gift<br>
+                4. Enter the amount or Grams you want to Gift<br>
+                5. Finally choose a custom designed Gift card and send the gift with a lovely message.<br>
+
+                 </span></p>
               </div>
 
-              <div class="faq__answer">
-                  <p>On the GoldLane app<br> <div style="line-height: 1"> 
-                  <ul><li>Select Gift option</li></ul>
-                   <ul><li>Choose the commodity</li></ul>
-                   <ul><li>Enter the mobile number of the user you want to Gift</li></ul>
-                   <ul><li>Enter the amount or Grams you want to Gift</li></ul>
-                   <ul><li>Finally choose a custom designed Gift card and send the gift with a lovely message.</li></ul>
-
-                   
-                </div></p>
-              </div>
+             
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>2. Can I gift digital Gold/Silver from my Vault Balance?</p>
+                <p>2. Can I gift digital Gold/Silver from my Vault Balance? <br> <span> <br> In order to prevent any fraud/misuse, we do not facilitate digital gold gifting from your existing Vault balance.<br><br>
+
+                Before Gifting, kindly ensure that the receiver is registered with us. Thereafter, you can choose the type of product that you wish to gift and the quantity. Enter the registered mobile number of the receiver and send your gift, along with a personal message </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                   <p>In order to prevent any fraud/misuse, we do not facilitate digital gold gifting from your existing Vault balance.<br><br>
 
                 Before Gifting, kindly ensure that the receiver is registered with us. Thereafter, you can choose the type of product that you wish to gift and the quantity. Enter the registered mobile number of the receiver and send your gift, along with a personal message.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>3. Can I gift digital Gold/Silver to a person who doesn’t have a GoldLane account?</p>
+                <p>3. Can I gift digital Gold/Silver to a person who doesn’t have a GoldLane account? <br> <span> <br> No.In order to accept gifts, the receiver has to be registered with GoldLane as well. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>No.In order to accept gifts, the receiver has to be registered with GoldLane as well.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>4. I opted to gift gold/silver via the GoldLane app but the recipient did not receive it. What should I do?</p>
+                <p>4. I opted to gift gold/silver via the GoldLane app but the recipient did not receive it. What should I do? <br> <span> <br> In such cases, kindly contact our customer support team.  </span></p>
               </div>
 
-              <div class="faq__answer">
+             <!--  <div class="faq__answer">
                  <p>In such cases, kindly contact our customer support team. </p>
-              </div>
+              </div> -->
             </div>
 
       
@@ -768,44 +698,44 @@ background-position: right -1100px top -1070px;
            <p>Purety, Safety and Stroge</p>
         </div>
        
-           <div class="faq__ques__answer">
+           <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>1. What is the Guarantee that GoldLane’s products are pure?</p>
+                <p>1. What is the Guarantee that GoldLane’s products are pure? <br> <span> <br> All the products we offer at GoldLane are BIS Hallmark /Independent Assayer certified. Our gold/silver does not just shine, it shines with excellence. </span></p>
               </div>
 
-              <div class="faq__answer">
+             <!--  <div class="faq__answer">
                   <p>All the products we offer at GoldLane are BIS Hallmark /Independent Assayer certified. Our gold/silver does not just shine, it shines with excellence.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>2. How safely my Gold/Silver is stored?</p>
+                <p>2. How safely my Gold/Silver is stored? <br> <span> <br> Industry Standard Vaults, coupled with insurance coverage, ensures that your gold and investments are in the safest hands. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                   <p>Industry Standard Vaults, coupled with insurance coverage, ensures that your gold and investments are in the safest hands. </p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>3. Is there any charge for storing my gold?</p>
+                <p>3. Is there any charge for storing my gold? <br> <span> <br> No storage charges are levied if your account is active. </span></p>
               </div>
 
-              <div class="faq__answer">
+             <!--  <div class="faq__answer">
                  <p>No storage charges are levied if your account is active.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>4. I opted to gift gold/silver via the GoldLane app but the recipient did not receive it. What should I do?</p>
+                <p>4. I opted to gift gold/silver via the GoldLane app but the recipient did not receive it. What should I do? <br> <span> <br> In such cases, kindly contact our customer support team. </span></p>
               </div>
 
-              <div class="faq__answer">
+             <!--  <div class="faq__answer">
                  <p>In such cases, kindly contact our customer support team. </p>
-              </div>
+              </div> -->
             </div>
 
       
@@ -818,74 +748,78 @@ background-position: right -1100px top -1070px;
            <p>Savings plan</p>
         </div>
        
-           <div class="faq__ques__answer">
+           <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>1. How can I start a savings plan through GoldLane?</p>
+                <p>1. How can I start a savings plan through GoldLane? <br> <span> <br> On the GoldLane app tap savings plan to explore.
+                   GoldLane has created few plans for users according to their needs and convenience of investing in Gold.<br>
+                 You also have option to create a custom plans. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                   <p>On the GoldLane app tap savings plan to explore.
                    GoldLane has created few plans for users according to their needs and convenience of investing in Gold.<br>
                  You also have option to create a custom plans.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>2.Is it possible to cancel my savings plan in between?</p>
+                <p>2.Is it possible to cancel my savings plan in between? <br> <span> <br> Yes. At GoldLane, we offer you the flexibility to withdraw your plan whenever you want. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                   <p> Yes. At GoldLane, we offer you the flexibility to withdraw your plan whenever you want.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>3. Is there any cancellation charge?</p>
+                <p>3. Is there any cancellation charge? <br> <span> <br> No. There are no charges for cancellation of plans. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>No. There are no charges for cancellation of plans.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>4. Is there any lock-in period for gold accumulated in a savings plan?</p>
+                <p>4. Is there any lock-in period for gold accumulated in a savings plan? <br> <span> <br> No. There is no lock-in period for gold accumulated in a savings plan. GoldLane only recommends to hold the accumulated gold for better returns. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>No. There is no lock-in period for gold accumulated in a savings plan. GoldLane only recommends to hold the accumulated gold for better returns.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>5. Can I sell or Exchange gold accumulated before my plan gets completed?</p>
+                <p>5. Can I sell or Exchange gold accumulated before my plan gets completed? <br> <span> <br> Yes. Upon accumulating gold/silver in your Digital vault, you have the option to either exchange or sell it. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>Yes. Upon accumulating gold/silver in your Digital vault, you have the option to either exchange or sell it.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>6. How accurate is Est. Gold Accumulation and Est. Growth predicted in the Savings Plan?</p>
+                <p>6. How accurate is Est. Gold Accumulation and Est. Growth predicted in the Savings Plan? <br> <span> <br> We use historical data to predict Estimated Gold Accumulation and Growth values. Please note that these values are only for reference purposes and the predictions may vary based on market conditions and other factors. Kindly read the Disclaimer before investing in a savings plan. </span></p>
               </div>
-
+<!-- 
               <div class="faq__answer">
                  <p>We use historical data to predict Estimated Gold Accumulation and Growth values. Please note that these values are only for reference purposes and the predictions may vary based on market conditions and other factors. Kindly read the Disclaimer before investing in a savings plan.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>7. What are the payment options that support auto-payment in GoldLane savings plan?</p>
+                <p>7. What are the payment options that support auto-payment in GoldLane savings plan? <br> <span> <br><br> 
+                 1.All major credit cards are accepted for auto payments.<br>
+                  2.If you own Visa or MasterCard debit cards issued by ICICI Bank, Kotak Mahindra Bank, Citibank and Canara Bank then you can enjoy an automated recurring payment facility with just one-time authentication. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>
                    <div>
                     <ul><li>All major credit cards are accepted for auto payments.</li></ul>
@@ -893,7 +827,7 @@ background-position: right -1100px top -1070px;
 
                    </div>
                  </p>
-              </div>
+              </div> -->
             </div>
 
       
@@ -906,100 +840,96 @@ background-position: right -1100px top -1070px;
            <p>Savings</p>
         </div>
        
-           <div class="faq__ques__answer">
+           <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>1. How to sell my accumulated gold on GoldLane?</p>
+                <p>1. How to sell my accumulated gold on GoldLane? <br> <span> <br> After entering the GoldLane app, <br><br> 
+                1.open sell option<br>
+                2.choose commodity and enter weight you want to sell.<br>
+                3.Check your bank details and enter iPin to proceed.
+                   We will transfer to your account after verification </span></p>
               </div>
 
-              <div class="faq__answer">
-                <p>After entering the GoldLane app, <br> <div style="line-height: 0.5"> 
-                  <ul><li>open sell option</li></ul>
-                   <ul><li>choose commodity and enter weight you want to sell.</li></ul>
-                   <ul style="line-height: 1.3"><li>Check your bank details and enter iPin to proceed.
-                   We will transfer to your account after verification</li></ul>
-                   
-                </div></p>
-              </div>
+              
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>2. Why are buy and sell prices different?</p>
+                <p>2. Why are buy and sell prices different? <br> <span> <br> GST and other local taxes are the reason why buying and selling prices </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>GST and other local taxes are the reason why buying and selling prices</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>3. If I sell my digital gold, how long will it take for my money to be credited?</p>
+                <p>3. If I sell my digital gold, how long will it take for my money to be credited? <br> <span> <br>  We take a maximum of 3 working days to clear all transactions. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>We take a maximum of 3 working days to clear all transactions.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>4. Why do you take 2 days to verify a bank account?</p>
+                <p>4. Why do you take 2 days to verify a bank account? <br> <span> <br> We verify bank accounts to prevent unauthorised user transactions. At GoldLane, security is a top priority. We recommend adding a bank account upon registering with GoldLane, thereby verifying your account at the earliest. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>We verify bank accounts to prevent unauthorised user transactions. At GoldLane, security is a top priority. We recommend adding a bank account upon registering with GoldLane, thereby verifying your account at the earliest.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>5. I sold my gold but still haven’t received cash even after 48 hours?</p>
+                <p>5. I sold my gold but still haven’t received cash even after 48 hours? <br> <span> <br> We take 3 working days to verify the transaction and settle the amount with your bank. In case it has been more than 3 days, kindly contact our support team and we will help you out. </span></p>
               </div>
-
+<!-- 
               <div class="faq__answer">
                  <p>We take 3 working days to verify the transaction and settle the amount with your bank. In case it has been more than 3 days, kindly contact our support team and we will help you out.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>6. How do I change Bank Account details?</p>
+                <p>6. How do I change Bank Account details? <br> <span> <br> In order to change your bank account details, simply go to the Settings tab on the GoldLane app, click on Bank Details and press Edit. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>In order to change your bank account details, simply go to the Settings tab on the GoldLane app, click on Bank Details and press Edit.</p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="faq__ques__answer">
+            <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>7. Can I cancel my sell order?</p>
+                <p>7. Can I cancel my sell order? <br> <span> <br> Unfortunately, once an order is placed, you will not be able to cancel it. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>Unfortunately, once an order is placed, you will not be able to cancel it. </p>
-              </div>
+              </div> -->
             </div>
 
-             <div class="faq__ques__answer">
+             <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>8. What is the minimum sell value?</p>
+                <p>8. What is the minimum sell value? <br> <span> <br> The Minimum selling value for digital gold and silver must be greater than or equal to Rs. 10. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>The Minimum selling value for digital gold and silver must be greater than or equal to Rs. 10.</p>
-              </div>
+              </div> -->
             </div>
 
-             <div class="faq__ques__answer">
+             <div id="search" class="faq__ques__answer">
               <div class="faq__question mt-4">
-                <p>9. In case of instant transfers, what are the charges?</p>
+                <p>9. In case of instant transfers, what are the charges? <br> <span> <br> While normal settlements are free of cost, we levy a charge of Rs.10/per transaction for instant settlements. However, your bank account needs to be verified for all the processes. </span></p>
               </div>
 
-              <div class="faq__answer">
+              <!-- <div class="faq__answer">
                  <p>While normal settlements are free of cost, we levy a charge of Rs.10/per transaction for instant settlements. However, your bank account needs to be verified for all the processes.</p>
-              </div>
+              </div> -->
             </div>
 
 
@@ -1025,9 +955,9 @@ background-position: right -1100px top -1070px;
 
   <div class="col-12 col-xl-5 col-lg-5 col-md-5 text-center">
 
-   <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding: 8px 13px 13px 13px; border-radius: 10px; font-size: 15px; margin-top: 60px; box-shadow: none;"><span class="mr-3"><img  src="img/main_question.png"></span>Submit a query/complaint </button>
+   <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding: 8px 13px 13px 13px; border-radius: 10px; font-size: 15px; margin-top: 60px; box-shadow: none; font-family: Poppins"><span class="mr-3"><img  src="img/main_question.png"></span>Submit a query/complaint </button>
 
-   <h4 class="mt-5 text-center" style="text-align: left; font-size: 28px; font-family: Poppins;color: #3B325F;">Quick <span style="font-weight: 800; padding-right: 120px;">Links</span></h4>
+   <h4 class="mt-5 text-center" style="text-align: left; font-size: 28px; font-family: Poppins;color: #3B325F;">Quick <span style="font-weight: 800; padding-right: 120px; color: #3B325F;">Links</span></h4>
  
    <div class="mt-4">
    <button type="button" class="btn btn-primary" style="background-color: white; color: #3B325F; border: none; outline: none; border-radius: 5px; padding: 5px 20px;">Buy</button> <span><button style="background-color: white; color: #3B325F; border: none; outline: none; border-radius: 5px; padding: 5px 20px;" type="button" class="btn btn-primary">Sell</button></span> <span><button style="background-color: white; color: #3B325F; border: none; outline: none; border-radius: 5px; padding: 5px 20px;" type="button" class="btn btn-primary">All Headings</button></span>
@@ -1168,35 +1098,7 @@ $(document).ready(function() {
       })
 
 
-$(document).ready(function() {
-  fetch(`${ip}report/category/`) 
-        .then(function(res){
-        return res.json()
-        })
-        .then(function(data){
-          console.log(data)
-          result(data)
-        })
-        .catch(function(err){
-          console.log("Something Wrong With the api Call"+err)
-        })
-        function result(data){
-          let options=" ";
-          profession = data;
-          options += `<option value="other">Choose category</option>`         
 
-          for(let i=0;i<profession.results.length;i++){
-          options += `<option value="${profession.results[i].title}">${profession.results[i].title}</option>`
-
-        }
-
-            
-            document.getElementById("profession1").innerHTML = options;
-        }
-
-
-
-      })
 
 function complaint() {
    $('#load_icon1').addClass('spinner-border text-light');
@@ -1335,26 +1237,36 @@ $('#load_icon2').removeClass('spinner-border text-light');
       })
       
 
-      document.getElementById("callback").disabled = true;
-      $("#profession1,#phoneno1,#email1").on("input", function() {
-      var profession = $("#profession1").val().length;
-      var phoneno = $("#phoneno1").val().length;
-      var email = $("#email1").val().length;
-    
-   
-          
-    
-      if(profession<=0 || phoneno<=0 || email<=0){
-        document.getElementById("callback").disabled = true;
-       } else{
-        document.getElementById("callback").disabled = false;
-       }
-      })
-
-
-
 </script>
 
+<script>
+  $(document).ready(function(){
+    $("#filter").keyup(function(){
+ 
+        // Retrieve the input field text and reset the count to zero
+        var filter = $(this).val(), count = 0;
+ 
+        // Loop through the comment list
+        $("#search p").each(function(){
+ 
+            // If the list item does not contain the text phrase fade it out
+            if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                $(this).fadeOut();
+               
+ 
+            // Show the list item if the phrase matches and increase the count by 1
+            } else {
+                $(this).show();
+                count++;
+            }
+        });
+ 
+        // Update the count
+        // var numberItems = count;
+        // $("#filter-count").text("Number of Comments = "+count);
+    });
+});
+</script>
 
 
 </body>
