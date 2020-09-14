@@ -16,6 +16,12 @@
 </head>
 <style>
 
+br {
+            display: block; /* makes it have a width */
+            content: ""; /* clears default height */
+            margin-top: 5px; /* change this to whatever height you want it */
+}
+
 [data-filter-item] {
   padding: 15px;
   background-color: #ccc;
@@ -97,6 +103,9 @@ background-position: right -1100px top -1070px;
 .crd {
   max-width: 100% !important;
 }
+.nv {
+  max-width: 100% !important;
+}
 .crd1 {
   max-width: 100% !important;
 }
@@ -131,9 +140,9 @@ background-position: right -1100px top -1070px;
 <body>
 
 
-<div class="container">
+<div class="container nv" style="max-width: 88%;">
 	<nav class="navbar navbar-expand-lg navbar-light mt-3">
-   <a class="navbar-brand g_logo" href="https://test.1ounce.in/"><img src="img/logo.svg" class="logoClass pr-5" alt="logo" style="width: 75%;" ></a>
+   <a class="navbar-brand g_logo" href="https://test.1ounce.in/"><img src="img/logo.svg" class="logoClass" alt="logo" style="width: 75%;" ></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color:#2DA3F2">
     <span class="navbar-toggler-icon" style="font-size: 20px;color:#2DA3F2; "></span>
   </button>
@@ -166,11 +175,11 @@ background-position: right -1100px top -1070px;
 <div class="container">
   <div class="row">
     <div class="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7">
-    <h4 id="support" style="color: #3B325F; font-weight: 600; font-size: 28px; font-family: Poppins;" class="mt-5 pl-5"><span style="font-weight: 100; color: #3B325F;">Goldlane</span> <span style="font-weight: 800; color: #3B325F;">Digital Gold faq</span></h4>
-      <div class="input-group mt-5 pl-5 search" style="max-width: 75%;">
-      <input id="filter" class="form-control form-control-lg text-input" type="text" placeholder="Search"  style="border-right: 0px; box-shadow: none;">
+    <h4 id="support" style="color: #3B325F; font-weight: 600; font-size: 38px; font-family: Poppins;" class="mt-5 pl-5"><span style="font-weight: 100; color: #3B325F;">Goldlane</span> <span style="font-weight: 800; color: #3B325F;">Digital Gold faq</span></h4>
+      <div class="input-group mt-5 pl-5 search" style="max-width: 75%; ">
+      <input id="filter" class="form-control form-control-lg text-input" type="text" placeholder="Search"  style="border-right: 0px; box-shadow: none; font-family: Poppins; ">
       <div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color: white;"><img src="img/Icon feather-search.png"></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color: white; "><img src="img/Icon feather-search.png"></span>
       </div>
     </div>
 
@@ -999,7 +1008,7 @@ background-position: right -1100px top -1070px;
 
     
 
-       <button style="background-color: white; color: #3B325F; border: none; outline: none; border-radius: 5px; padding: 5px 20px;" type="button" class="btn btn-primary mt-4"><a href="faq_purity.html" class="button_link">Purety, Safety and Stroge</a></button>
+       <button style="background-color: white; color: #3B325F; border: none; outline: none; border-radius: 5px; padding: 5px 20px; box-shadow: 5px 5px 15px 15px #F1F5F9;" type="button" class="btn btn-primary mt-4"><a href="faq_purity.html" class="button_link">Purety, Safety and Stroge</a></button>
      
         
       </div>
